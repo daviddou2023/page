@@ -1,0 +1,80 @@
+/* 导航栏样式 */
+.navbar {
+  background-color: #333;
+  position: fixed; /* 固定在页面左侧 */
+  left: 0;
+  top: 0;
+  height: 100%; /* 占满整个页面高度 */
+  width: 150px; /* 导航栏的宽度变窄 */
+  overflow: hidden;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* 垂直排列导航项 */
+  justify-content: flex-start; /* 从顶部开始排列 */
+  align-items: center; /* 居中对齐导航项 */
+}
+
+.navbar ul li {
+  width: 100%; /* 导航项的宽度填满整个导航栏 */
+  text-align: center;
+}
+
+.navbar ul li a {
+  display: block;
+  color: white;
+  padding: 15px 0; /* 导航项的上下内边距调整为15px */
+  text-decoration: none;
+  width: 100%; /* 链接占满整个li */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* 添加平滑过渡效果 */
+}
+
+.navbar ul li a:hover {
+  background-color: #575757;
+  transform: scale(1.1); /* 鼠标悬停时放大 */
+}
+
+/* 点击时动画效果 */
+.navbar ul li a:active {
+  background-color: #777;
+  transform: scale(0.9); /* 点击时缩小 */
+}
+
+/* 初始显示图片的样式 */
+.initial-screen {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center;     /* 垂直居中 */
+  margin-top: 50px;
+  margin-left: 150px; /* 调整内容位置，避免被左侧导航栏遮挡 */
+}
+
+.initial-image {
+  width: 60%; /* 图片宽度增大 */
+  height: auto;
+}
+
+/* Tab内容样式 */
+.tab-content {
+  display: none;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* 图片容器样式 */
+.image-container {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center;     /* 垂直居中 */
+  margin-top: 50px;
+  margin-left: 150px; /* 调整内容位置，避免被左侧导航栏遮挡 */
+}
+
+.image-container img {
+  width: 60%; /* 图片宽度增大 */
+  height: auto;
+}
